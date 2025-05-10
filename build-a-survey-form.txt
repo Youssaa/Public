@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+<body>
+  <header>
+<h1 id ="title">Umfrage Kundenzufriedenheit</h1>
+<p id="description">deine Meinung ist uns wichtig</p>
+</header>
+<form id="survey-form">
+  <fieldseet>
+<label id="name-label"for="name-label">Name und Vorname</label>
+<input id="name" type="text" placeholder="Ex. John Doe" required/>
+</fieldset>
+<fieldset>
+<label id="email-label" for="email-label">Email Adresse</label>
+<input id="email" type="email" placeholder="example@email.com" required/>
+</fieldset>
+<fieldset>
+<label id="number-label" for="number-label">Alter</label>
+<input id="number" type="number" min="1"max="99" placeholder="20"/>
+</fieldset>
+<fieldset>
+<label for="Zufiredenheit">wie zufrieden bist du?</label>
+<select id="dropdown">
+  <option value="poor">Poor</option>
+    <option value="very good">Very good</option>
+</select>
+</fieldset>
+<fieldset>
+<legend> woher hast du uns erkannt</legend>
+<label for="yes option">yes</label>
+<input id="yes option" type="radio" name="option" value="yes option"/>
+<label for="No option">No</label>
+<input id="No option" type="radio" name="option" value="No option"/>
+
+</fieldset>
+
+<fieldset>
+<legend>
+  warum bis du zurückgekommen </legend>
+  <label for="facebook">facebook</label>
+  <input type="checkbox" id="facebook" name="facebook" value="facebook"/>
+  <label for="instagram">instagram</label>
+  <input type="checkbox" id="instagram" name="instagram" value="instagram"/>
+  <label for="freunde">freunde</label>
+  <input type="checkbox" id="freunde" name="freunde" value="freunde"/>
+</fieldset>
+
+<fieldset>
+  <label for="comments"> other comments<label>
+    <textarea cols="30" rows="10" name="comments" id="comments"></textarea>
+   </fieldset>
+<button type="submit" id="submit">Submit</button>
+
+  </form>
+  </body>
+</html>
